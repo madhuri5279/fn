@@ -161,7 +161,6 @@ func NewConfig() (*Config, error) {
 	err = setEnvBool(err, EnvEnableNBResourceTracker, &cfg.EnableNBResourceTracker)
 	err = setEnvBool(err, EnvDisableReadOnlyRootFs, &cfg.DisableReadOnlyRootFs)
 	err = setEnvBool(err, EnvDisableDebugUserLogs, &cfg.DisableDebugUserLogs)
-	err = setEnvBool(err, EnvDisableTini, &cfg.DisableTini)
 
 	if err != nil {
 		return cfg, err
